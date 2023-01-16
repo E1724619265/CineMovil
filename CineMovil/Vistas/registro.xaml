@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CineMovil.Vistas.registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESE SUS DATOS" FontSize="20"
+                   TextColor="Black" HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre:" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtnombre" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Usuario:" FontSize="15" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtusuario" Placeholder="Usuario" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Correo:" FontSize="15" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtcorreo" Placeholder="Correo" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Contraseña:" FontSize="15" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtcontraseña" Placeholder="Contraseña" IsPassword="True" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btncrear" Text="CREAR" Clicked="btncrear_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

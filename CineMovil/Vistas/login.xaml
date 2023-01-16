@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CineMovil.Vistas.login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="INGRESE SUS CREDENCIALES" FontSize="20" 
+                   TextColor="Black" HorizontalTextAlignment="Center"/>
+            <Image Source="login1.png"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="User:" FontSize="15" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtusser" Placeholder="usuario" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Password:" FontSize="15" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtpassword" Placeholder="Password" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+            <Button x:Name="btningresa" Text="INGRESAR" Clicked="btningresa_Clicked"/>
+            <Button x:Name="btnregistro" Text="CREAR CUENTA" Clicked="btnregistro_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
