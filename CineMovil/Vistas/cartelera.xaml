@@ -24,6 +24,7 @@
 
                 <Image Source="agente.png" Grid.Row="1" Grid.Column="0"/>
                 <Image Source="megan.png" Grid.Row="1" Grid.Column="1"/>
+                <Label>Cines</Label>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
